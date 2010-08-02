@@ -1,0 +1,52 @@
+
+/* ***************************************************************************
+ * Loops
+ */ 
+
+// Looping over an array, order unimportant
+var foo = ['goat', 'yak', 'ox', 'otter'], i = foo.length;
+while(i--){
+	foo[i] = foo[i] + '!';
+}
+
+// Looping over an array, order important
+var foo = ['goat', 'yak', 'ox', 'otter'], foo_length = foo.length, i = 0;
+for(; i < foo_length; i++){
+	alert(foo[i] + ' stew');
+}
+
+/* ***************************************************************************
+ * Functions
+ */ 
+
+// Defaulting arguments
+function foo(settings){
+	var config = settings || {speed: 'damn fast'};
+}
+
+// Group variable definitions at top of function
+function foo(){
+	var bar1 = 'b1',
+			bar2 = 'b2',
+			bar3 = 'b3'
+	;
+
+}
+
+// Early bailout - Return as early as possible to avoid overhead 
+function foo(bar){
+
+	if(bar === null) return false;
+
+	// Something that would suck CPU like a Dyson
+
+	return 'Great justice!';
+
+}
+
+// Self-executing anonymous function
+(function(args){
+	alert(args + 's are awesome');
+ })('llama');
+
+
