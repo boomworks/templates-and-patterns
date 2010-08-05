@@ -1,0 +1,46 @@
+/*
+Font sizes:
+ - 10px 0.833em
+ - 11px: 0.91em
+ - 12px: 1em (base)
+ - 15px: 1.25em
+ - 16px: 1.333em
+ - 18px: 1.5em
+ - 20px: 1.666em (nav, content h2)
+ - 32px: 2.666em
+ - 40px: 3.333em (header text)
+*/
+
+body {
+	margin: 0;
+	background: #fff;
+	color: #969696;
+	font: 0.75em/1.6em Helvetica,sans-serif;
+}
+
+
+section, article, header, nav, aside, footer, video, dialog, figure, address {
+  display: block;
+}
+
+a img {
+  border: none;
+}
+
+input, select, option, textarea {
+	color: #969696;
+	font: 1em Helvetica,sans-serif;
+}
+
+a:link {
+	color: #5757ff;
+}
+
+a:visited {
+	color: #9a57ff;
+}
+
+a:hover, a:active {
+	color: #9a57ff;
+}
+
