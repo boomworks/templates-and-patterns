@@ -9,6 +9,14 @@ var MODULE_NAME = (function(_this, $){
 	_this.revision = 1;
 	_this.version = [_this.major_version, _this.minor_version, _this.revision].join('.');
 
+	// Constructor
+	_this.initialise = function(){
+		$(function(){
+			console.log('MODULE_NAME v'+_this.version);
+		});
+		return _this;
+	};
+
 	// Public methods
 	_this.foo = function(){
 		return 'foo';
@@ -22,7 +30,7 @@ var MODULE_NAME = (function(_this, $){
 		return 'bar';
 	};
 
-	return _this;
+	return _this.initialise();
 
 }(MODULE_NAME || {}, jQuery));
 

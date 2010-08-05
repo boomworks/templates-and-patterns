@@ -27,8 +27,8 @@ function foo(settings){
 // Group variable definitions at top of function
 function foo(){
 	var bar1 = 'b1',
-			bar2 = 'b2',
-			bar3 = 'b3'
+	    bar2 = 'b2',
+	    bar3 = 'b3'
 	;
 
 }
