@@ -47,6 +47,16 @@ function foo(bar){
 // Self-executing anonymous function
 (function(args){
 	alert(args + 's are awesome');
- })('llama');
+})('llama');
 
+// Assigning function to event handler & executing immediately
+foo.onclick = (function(){
+	// Do something
+	return arguments.callee;
+})();
 
+// Potentially more useful to just do this if you need to reuse the function
+var foo_click_handler = foo.onclick = function(){
+	// Do something
+};
+foo_click_handler();
