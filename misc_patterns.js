@@ -15,20 +15,28 @@ for(; i < foo_length; i++){
 	alert(foo[i] + ' stew');
 }
 
+// ...or possibly:
+var foo = ['goat', 'yak', 'ox', 'otter'], i = 0, l = foo.length;
+do{
+	foo[i] = foo[i] + '!';
+}while(++i < l);
+
+
 /* ***************************************************************************
  * Functions
  */ 
 
 // Defaulting arguments
-function foo(settings){
-	var config = settings || {speed: 'damn fast'};
+function foo(speed){
+	var speed = speed || 'damn fast';
 }
 
 // Group variable definitions at top of function
 function foo(){
-	var bar1 = 'b1',
-	    bar2 = 'b2',
-	    bar3 = 'b3'
+	var
+		bar1 = 'b1',
+		bar2 = 'b2',
+		bar3 = 'b3'
 	;
 
 }
