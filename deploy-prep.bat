@@ -2,7 +2,7 @@
 REM Deployment preperation script
 
 REM setup date & time vars
-for /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set date=%%c%%b%%a)
+for /f "tokens=1-4 delims=/ " %%a in ('date /t') do (set date=%%d%%c%%b)
 for /f "tokens=1-2 delims=: " %%a in ('time /t') do (set time=%%a%%b%)
 
 REM SVN export
