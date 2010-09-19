@@ -1,38 +1,29 @@
-var ModuleTest = (function(_this, $, undefined){
+var ModuleTest = (function(_this, $){
 
-	// Public properties
+	/* **************************************************************************
+	 * Public properties
+	 */
+	_this.module_name = 'ModuleTest';
 	_this.major_version = 0;
 	_this.minor_version = 0;
 	_this.revision = 1;
 	_this.version = [_this.major_version, _this.minor_version, _this.revision].join('.');
 
+
+	/* **************************************************************************
+	 * Public methods
+	 */
+
 	// Constructor
 	_this.initialise = function(){
 		$(function(){
-			log(_this.toString());
+			_this.log('Initialising ' + _this.toString());
 		});
 		return _this;
 	};
 
-	// Public methods
-	_this.foo = function(){
-		return 'foo';
-	};
-
-	_this.toString = function(){
-		return 'ModuleTest v'+_this.version;
-	};
-
-	// Private properties
-	var _rockin = 'damn straight';
-
-	// Private methods
-	var _bar = function(){
-		return 'bar';
-	};
-
-	// Public & private
-	var log = _this.log = function(){
+	// Generic logging function 
+	_this.log = function(){
 		try{
 			console.log.apply(console, arguments);
 		}catch(e){
@@ -45,10 +36,12 @@ var ModuleTest = (function(_this, $, undefined){
 	};
 
 	// Determines the type of a variable
-	var typeOf = _this.typeOf = function(v){
+	// TODO:
+	// - Advanced types? e.g. HTML Element, jQuery object...
+	_this.typeOf = function(v){
 		if(typeof v === 'undefined') return 'undefined';
 		if(v === null) return 'null';
-		// Need to test if this is a native object, in case an object with one of these methods is passed in
+		// Test if this is a native object, in case an object with one of these methods is passed in
 		if(v.constructor.toString().indexOf('[native code]') != -1){
 			if(v.charAt) return 'string';
 			if(v.splice) return 'array';
@@ -57,9 +50,35 @@ var ModuleTest = (function(_this, $, undefined){
 			if(v.getTime) return 'date';
 			if(v.toString() === 'true' || v.toString() === 'false') return 'boolean';
 		}
-		return typeof v;
+		// Check if the object can tell us what it is
+		if(v.typeOf) return v.typeOf();
+		return typeof v; // object, function
 	};
 
+	_this.toString = function(){
+		return _this.module_name + ' v' + _this.version;
+	};
+
+
+	/* **************************************************************************
+	 * Private properties
+	 */
+
+	var _rockin = 'damn straight';
+
+
+	/* **************************************************************************
+	 * Private methods
+	 */
+
+	var _bar = function(){
+		return 'bar';
+	};
+
+
+	/* **************************************************************************
+	 * Call the module constructor & return self
+	 */
 	return _this.initialise();
 
 }(ModuleTest || {}, jQuery));
