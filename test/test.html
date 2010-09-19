@@ -13,7 +13,10 @@
 	<h2 id="qunit-banner"></h2>
 	<h2 id="qunit-userAgent"></h2>
 	<ol id="qunit-tests"></ol>
-	<div id="qunit-fixture"></div>
+	<div id="qunit-fixture">
+		<p id="foo">p#foo</p>
+		<p><b>b1</b><b>b2</b><b>b3</b>
+	</div>
 
 <script src="../starter/js/jquery-1.4.2.min.js"></script>
 <script src="qunit.js"></script>
@@ -24,6 +27,15 @@
 		module('ModuleTest');
 		test('typeOf()', function(){
 			var foo, bar = null;
+
+			// jQuery
+			//equals(ModuleTest.typeOf($('#qunit-fixture #foo')), 'object', '$(#foo)'); // array
+			//equals(ModuleTest.typeOf($('#qunit-fixture b')), 'object', '$(b)'); // array
+			//equals(ModuleTest.typeOf($), 'object', '$'); // function
+
+			// .type support
+			equals(ModuleTest.typeOf(ModuleTest), 'module', 'ModuleTest');
+
 			// Literals
 			equals(ModuleTest.typeOf(function(){}), 'function', 'function(){}');
 			equals(ModuleTest.typeOf([]), 'array', '[]');
@@ -44,6 +56,21 @@
 			equals(ModuleTest.typeOf(new RegExp('/\s/g')), 'regexp', 'new RegExp()');
 			equals(ModuleTest.typeOf(new Date()), 'date', 'new Date()');
 			equals(ModuleTest.typeOf(new Boolean(true)), 'boolean', 'new Boolean()');
+
+			// Native
+			equals(ModuleTest.typeOf(-1.7976931348623157E+10308), 'number', '-1.7976931348623157E+10308');
+			equals(ModuleTest.typeOf(Infinity), 'number', 'Infinity');
+			equals(ModuleTest.typeOf(-Infinity), 'number', '-Infinity');
+			equals(ModuleTest.typeOf(NaN), 'number', 'NaN');
+			equals(ModuleTest.typeOf(Math.E), 'number', 'Math.E');
+			equals(ModuleTest.typeOf(Math.log), 'function', 'Math.log');
+
+			// Browser objects
+			equals(ModuleTest.typeOf(window), 'object', 'window');
+			equals(ModuleTest.typeOf(navigator), 'object', 'navigator');
+			equals(ModuleTest.typeOf(screen), 'object', 'screen');
+			equals(ModuleTest.typeOf(history), 'object', 'history');
+			equals(ModuleTest.typeOf(location), 'object', 'location');
 
 			// Variables
 			equals(ModuleTest.typeOf(bar), 'null', 'bar');

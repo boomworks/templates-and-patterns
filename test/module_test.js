@@ -1,8 +1,9 @@
-var ModuleTest = (function(_this, $){
+var ModuleTest = (function(_this, $, window, undefined){
 
 	/* **************************************************************************
 	 * Public properties
 	 */
+	_this.type = 'module';
 	_this.module_name = 'ModuleTest';
 	_this.major_version = 0;
 	_this.minor_version = 0;
@@ -37,7 +38,8 @@ var ModuleTest = (function(_this, $){
 
 	// Determines the type of a variable
 	// TODO:
-	// - Advanced types? e.g. HTML Element, jQuery object...
+	// - jQuery returns 'function', $('b') returns 'array'
+	// - Advanced types? e.g. global objects, HTML elements, jQuery objects...
 	_this.typeOf = function(v){
 		if(typeof v === 'undefined') return 'undefined';
 		if(v === null) return 'null';
@@ -51,7 +53,7 @@ var ModuleTest = (function(_this, $){
 			if(v.toString() === 'true' || v.toString() === 'false') return 'boolean';
 		}
 		// Check if the object can tell us what it is
-		if(v.typeOf) return v.typeOf();
+		if(v.type) return v.type;
 		return typeof v; // object, function
 	};
 
@@ -81,5 +83,5 @@ var ModuleTest = (function(_this, $){
 	 */
 	return _this.initialise();
 
-}(ModuleTest || {}, jQuery));
+}(ModuleTest || {}, jQuery, window));
 
