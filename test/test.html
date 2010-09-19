@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Module pattern test</title>
+  <link rel="stylesheet" href="qunit.css">
+</head>
+<body>
+
+
+	<h1 id="qunit-header">Module pattern test</h1>
+	<h2 id="qunit-banner"></h2>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture"></div>
+
+<script src="../starter/js/jquery-1.4.2.min.js"></script>
+<script src="qunit.js"></script>
+<script src="module_test.js"></script>
+<script>
+  $(function(){
+
+		module('ModuleTest');
+		test('typeOf()', function(){
+			var foo, bar = null;
+			// Literals
+			equals(ModuleTest.typeOf([]), 'array', '[]');
+			equals(ModuleTest.typeOf({}), 'object', '{}');
+			equals(ModuleTest.typeOf(''), 'string', '\'\'');
+			equals(ModuleTest.typeOf(1), 'number', '1');
+			equals(ModuleTest.typeOf(true), 'boolean', 'true');
+			equals(ModuleTest.typeOf(false), 'boolean', 'false');
+			equals(ModuleTest.typeOf(/\s/g), 'regexp', '/\s/g');
+			equals(ModuleTest.typeOf(null), 'null', 'null');
+
+			// Constructors
+			equals(ModuleTest.typeOf(new Array(1,2,3,4)), 'array', 'new Array()');
+			equals(ModuleTest.typeOf(new Object()), 'object', 'new Object()');
+			equals(ModuleTest.typeOf(new String('Hello world')), 'string', 'new String()');
+			equals(ModuleTest.typeOf(new Number(1234)), 'number', 'new Number()');
+			equals(ModuleTest.typeOf(new RegExp('/\s/g')), 'regexp', 'new RegExp()');
+			equals(ModuleTest.typeOf(new Date()), 'date', 'new Date()');
+			equals(ModuleTest.typeOf(new Boolean(true)), 'boolean', 'new Boolean()');
+
+			// Variables
+			equals(ModuleTest.typeOf(bar), 'null', 'bar');
+			equals(ModuleTest.typeOf(foo), 'undefined', 'foo');
+		});
+	});
+</script>
+
+</body>
+</html>
+
