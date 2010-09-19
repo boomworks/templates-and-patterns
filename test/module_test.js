@@ -18,7 +18,7 @@ var ModuleTest = (function(_this, $, U, undefined){
 	// Constructor
 	_this.initialise = function(){
 		$(function(){
-			U.log('Initialising ' + _this.toString());
+			//U.log('Initialising ' + _this.toString());
 			_this.run_tests();
 		});
 		return _this;
@@ -26,7 +26,7 @@ var ModuleTest = (function(_this, $, U, undefined){
 
 	_this.run_tests = function(){
 
-		module('Boomworks.utils');
+		module('Boomworks::utils');
 		test('typeOf()', function(){
 			var foo, bar = null;
 
@@ -36,6 +36,7 @@ var ModuleTest = (function(_this, $, U, undefined){
 			equals(U.typeOf($), 'function', '$'); // function
 
 			// .type support
+			equals(U.typeOf(U), 'library', 'U');
 			equals(U.typeOf(ModuleTest), 'module', 'ModuleTest');
 
 			// Literals
@@ -80,6 +81,7 @@ var ModuleTest = (function(_this, $, U, undefined){
 		});
 
 		test('is()', function(){
+			ok(U.is(U, 'library'), 'library');
 			ok(U.is('foo', 'string'), 'string');
 			ok(!U.is('foo', 'number'), 'string != number');
 			ok(U.is(true, 'boolean'), 'boolean');
@@ -103,10 +105,15 @@ var ModuleTest = (function(_this, $, U, undefined){
 
 	};
 
+	_this.toString = function(){
+		return _this.module_name + ' v' + _this.version;
+	};
+
+
 	/* **************************************************************************
 	 * Call the module constructor & return self
 	 */
 	return _this.initialise();
 
-}(ModuleTest || {}, jQuery, Boomworks.utils));
+}(ModuleTest || {}, jQuery, Boomworks_utils));
 

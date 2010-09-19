@@ -1,17 +1,32 @@
+/*!
+ * Boomworks::utils - JavaScript utility library
+ *
+ * Copyright (c) 2010 Boomworks <http://boomworks.com.au/>
+ * Author: Lindsay Evans
+ * Licensed under the MIT license <http://www.opensource.org/licenses/mit-license.php> 
+ */
 
-var Boomworks = {};
-Boomworks.utils = (function(Boomworks, _this, window, undefined){
+var Boomworks_utils = (function(_this, window, undefined){
+
+
+	/* **************************************************************************
+	 * Private variables
+	 */
+
+	var
+		old_u,
+		U = _this
+	;
 
 	/* **************************************************************************
 	 * Public properties
 	 */
-	_this.type = 'module';
-	_this.module_name = 'Boomworks.utils';
+	_this.type = 'library';
+	_this.module_name = 'Boomworks::utils';
 	_this.major_version = 0;
 	_this.minor_version = 0;
 	_this.revision = 1;
 	_this.version = [_this.major_version, _this.minor_version, _this.revision].join('.');
-
 
 	/* **************************************************************************
 	 * Public methods
@@ -20,6 +35,7 @@ Boomworks.utils = (function(Boomworks, _this, window, undefined){
 	// Constructor
 	_this.initialise = function(){
 		old_u = window.u;
+		//U.log('Initialising ' + _this.toString());
 		return window.U = _this;
 	};
 
@@ -29,7 +45,10 @@ Boomworks.utils = (function(Boomworks, _this, window, undefined){
 		return _this;
 	};
 
-	// Generic logging function 
+
+	// Logging methods
+
+	// Generic logging method 
 	_this.log = function(){
 		try{
 			console.log.apply(console, arguments);
@@ -41,6 +60,9 @@ Boomworks.utils = (function(Boomworks, _this, window, undefined){
 			}
 		}
 	};
+
+
+	// Type checking etc.
 
 	// Determines the type of a variable
 	// TODO:
@@ -89,18 +111,10 @@ Boomworks.utils = (function(Boomworks, _this, window, undefined){
 		return _this.module_name + ' v' + _this.version;
 	};
 
-
-	/* **************************************************************************
-	 * Private variables
-	 */
-
-	var old_u;
-	
-
 	/* **************************************************************************
 	 * Call the module constructor & return self
 	 */
 	return _this.initialise();
 
-}(Boomworks || {}, Boomworks.utils || {}, window));
+}(Boomworks_utils || {}, window));
 
