@@ -93,8 +93,8 @@ var ModuleTest = (function(_this, $, U, undefined){
 
 			ok(U.is(1, 'int'), 'int');
 			ok(U.is(1, 'integer'), 'integer');
-			//ok(!U.is(1.0, 'int'), 'float != int');
-			//ok(!U.is(1.0, 'integer'), 'float != integer');
+			ok(!U.is(1.1, 'int'), 'float != int');
+			ok(!U.is(1.1, 'integer'), 'float != integer');
 
 			ok(U.is(1.0, 'float'), 'float');
 			ok(U.is(1.0, 'double'), 'double');

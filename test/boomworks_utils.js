@@ -86,7 +86,7 @@ var Boomworks_utils = (function(_this, window, undefined){
 
 	// Determines if a variable is of a certain type
 	// TODO:
-	// - check if int & float really are
+	// - check if floats really are (might not be possible - e.g. 1.0)
 	_this.is = function(v, t){
 		var t = t.toLowerCase();
 
@@ -95,12 +95,16 @@ var Boomworks_utils = (function(_this, window, undefined){
 				t = 'boolean';
 				break;
 			case 'num':
-			case 'int':
-			case 'integer':
 			case 'float':
 			case 'double':
 				t = 'number';
 				break;
+
+			case 'int':
+			case 'integer':
+				return _this.typeOf(v) === 'number' && Math.floor(v) === v;
+				break;
+
 		}
 		
 		return _this.typeOf(v) === t;
