@@ -25,6 +25,7 @@
 		test('typeOf()', function(){
 			var foo, bar = null;
 			// Literals
+			equals(ModuleTest.typeOf(function(){}), 'function', 'function(){}');
 			equals(ModuleTest.typeOf([]), 'array', '[]');
 			equals(ModuleTest.typeOf({}), 'object', '{}');
 			equals(ModuleTest.typeOf(''), 'string', '\'\'');
@@ -35,6 +36,7 @@
 			equals(ModuleTest.typeOf(null), 'null', 'null');
 
 			// Constructors
+			equals(ModuleTest.typeOf(new Function()), 'function', 'new Function()');
 			equals(ModuleTest.typeOf(new Array(1,2,3,4)), 'array', 'new Array()');
 			equals(ModuleTest.typeOf(new Object()), 'object', 'new Object()');
 			equals(ModuleTest.typeOf(new String('Hello world')), 'string', 'new String()');
