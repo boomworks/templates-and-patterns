@@ -57,6 +57,29 @@ var ModuleTest = (function(_this, $, window, undefined){
 		return typeof v; // object, function
 	};
 
+	// Determines if a variable is of a certain type
+	// TODO:
+	// - check if int & float really are
+	_this.is = function(v, t){
+		var t = t.toLowerCase();
+
+		switch(t){
+			case 'bool':
+				t = 'boolean';
+				break;
+			case 'num':
+			case 'int':
+			case 'integer':
+			case 'float':
+			case 'double':
+				t = 'number';
+				break;
+		}
+		
+		return _this.typeOf(v) === t;
+	};
+
+
 	_this.toString = function(){
 		return _this.module_name + ' v' + _this.version;
 	};
