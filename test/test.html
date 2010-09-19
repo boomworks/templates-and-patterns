@@ -20,87 +20,8 @@
 
 <script src="../starter/js/jquery-1.4.2.min.js"></script>
 <script src="qunit.js"></script>
+<script src="boomworks_utils.js"></script>
 <script src="module_test.js"></script>
-<script>
-  $(function(){
-
-		module('ModuleTest');
-		test('typeOf()', function(){
-			var foo, bar = null;
-
-			// jQuery
-			//equals(ModuleTest.typeOf($('#qunit-fixture #foo')), 'object', '$(#foo)'); // array
-			//equals(ModuleTest.typeOf($('#qunit-fixture b')), 'object', '$(b)'); // array
-			//equals(ModuleTest.typeOf($), 'object', '$'); // function
-
-			// .type support
-			equals(ModuleTest.typeOf(ModuleTest), 'module', 'ModuleTest');
-
-			// Literals
-			equals(ModuleTest.typeOf(function(){}), 'function', 'function(){}');
-			equals(ModuleTest.typeOf([]), 'array', '[]');
-			equals(ModuleTest.typeOf({}), 'object', '{}');
-			equals(ModuleTest.typeOf(''), 'string', '\'\'');
-			equals(ModuleTest.typeOf(1), 'number', '1');
-			equals(ModuleTest.typeOf(true), 'boolean', 'true');
-			equals(ModuleTest.typeOf(false), 'boolean', 'false');
-			equals(ModuleTest.typeOf(/\s/g), 'regexp', '/\s/g');
-			equals(ModuleTest.typeOf(null), 'null', 'null');
-
-			// Constructors
-			equals(ModuleTest.typeOf(new Function()), 'function', 'new Function()');
-			equals(ModuleTest.typeOf(new Array(1,2,3,4)), 'array', 'new Array()');
-			equals(ModuleTest.typeOf(new Object()), 'object', 'new Object()');
-			equals(ModuleTest.typeOf(new String('Hello world')), 'string', 'new String()');
-			equals(ModuleTest.typeOf(new Number(1234)), 'number', 'new Number()');
-			equals(ModuleTest.typeOf(new RegExp('/\s/g')), 'regexp', 'new RegExp()');
-			equals(ModuleTest.typeOf(new Date()), 'date', 'new Date()');
-			equals(ModuleTest.typeOf(new Boolean(true)), 'boolean', 'new Boolean()');
-
-			// Native
-			equals(ModuleTest.typeOf(-1.7976931348623157E+10308), 'number', '-1.7976931348623157E+10308');
-			equals(ModuleTest.typeOf(Infinity), 'number', 'Infinity');
-			equals(ModuleTest.typeOf(-Infinity), 'number', '-Infinity');
-			equals(ModuleTest.typeOf(NaN), 'number', 'NaN');
-			equals(ModuleTest.typeOf(Math.E), 'number', 'Math.E');
-			equals(ModuleTest.typeOf(Math.log), 'function', 'Math.log');
-
-			// Browser objects
-			equals(ModuleTest.typeOf(window), 'object', 'window');
-			equals(ModuleTest.typeOf(navigator), 'object', 'navigator');
-			equals(ModuleTest.typeOf(screen), 'object', 'screen');
-			equals(ModuleTest.typeOf(history), 'object', 'history');
-			equals(ModuleTest.typeOf(location), 'object', 'location');
-
-			// Variables
-			equals(ModuleTest.typeOf(bar), 'null', 'bar');
-			equals(ModuleTest.typeOf(foo), 'undefined', 'foo');
-		});
-
-		test('is()', function(){
-			ok(ModuleTest.is('foo', 'string'), 'string');
-			ok(!ModuleTest.is('foo', 'number'), 'string != number');
-			ok(ModuleTest.is(true, 'boolean'), 'boolean');
-			ok(ModuleTest.is(true, 'bool'), 'bool');
-
-
-			ok(ModuleTest.is(1, 'number'), 'number');
-			ok(ModuleTest.is(1, 'num'), 'num');
-
-			ok(ModuleTest.is(1, 'int'), 'int');
-			ok(ModuleTest.is(1, 'integer'), 'integer');
-			//ok(!ModuleTest.is(1.0, 'int'), 'float != int');
-			//ok(!ModuleTest.is(1.0, 'integer'), 'float != integer');
-
-			ok(ModuleTest.is(1.0, 'float'), 'float');
-			ok(ModuleTest.is(1.0, 'double'), 'double');
-			//ok(!ModuleTest.is(1, 'float'), 'int != float');
-			//ok(!ModuleTest.is(1, 'double'), 'int != double');
-
-		});
-
-	});
-</script>
 
 </body>
 </html>
