@@ -69,11 +69,22 @@ var Boomworks_utils = (function(_this, window, undefined){
 	// Type checking etc.
 
 	// Determines the type of a variable
-	// TODO:
-	// - Advanced types? e.g. global objects, HTML elements, jQuery objects...
-	_this.typeOf = function(v){
+	_this.typeOf = function(v, extras){
+
+		var extras = extras || false;
+
 		if(typeof v === 'undefined') return 'undefined';
 		if(v === null) return 'null';
+
+		// Check if the object can tell us what it is
+		if(extras && v.type) return v.type;
+
+		// Check if the object is jQuery itself
+		if(extras && v === jQuery) return 'jquery-library';
+
+		// Check if the object is a jQuery object
+		if(extras && v.jquery) return 'jquery-object';
+
 		// Test if this is a native object, in case an object with one of these methods is passed in
 		if(v.constructor.toString().indexOf('[native code]') != -1){
 			if(v.charAt) return 'string';
@@ -83,16 +94,20 @@ var Boomworks_utils = (function(_this, window, undefined){
 			if(v.getTime) return 'date';
 			if(v.toString() === 'true' || v.toString() === 'false') return 'boolean';
 		}
-		// Check if the object can tell us what it is
-		if(v.type) return v.type;
+
 		return typeof v; // object, function
+
 	};
 
 	// Determines if a variable is of a certain type
 	// TODO:
 	// - check if floats really are (might not be possible - e.g. 1.0)
-	_this.is = function(v, t){
-		var t = t.toLowerCase();
+	_this.is = function(v, t, extras){
+
+		var
+			t = t.toLowerCase(),
+			extras = extras || false
+		;
 
 		switch(t){
 
@@ -108,12 +123,13 @@ var Boomworks_utils = (function(_this, window, undefined){
 
 			case 'int':
 			case 'integer':
-				return _this.typeOf(v) === 'number' && Math.floor(v) === v;
+				return _this.typeOf(v, extras) === 'number' && Math.floor(v) === v;
 				break;
 
 		}
 
-		return _this.typeOf(v) === t;
+		return _this.typeOf(v, extras) === t;
+
 	};
 
 

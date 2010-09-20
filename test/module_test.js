@@ -31,13 +31,17 @@ var ModuleTest = (function(_this, $, U, undefined){
 			var foo, bar = null;
 
 			// jQuery
-			equals(U.typeOf($('#qunit-fixture #foo')), 'array', '$(#foo)'); // array
-			equals(U.typeOf($('#qunit-fixture b')), 'array', '$(b)'); // array
-			equals(U.typeOf($), 'function', '$'); // function
+			equals(U.typeOf($('#qunit-fixture #foo')), 'array', '$(#foo)');
+			equals(U.typeOf($('#qunit-fixture b')), 'array', '$(b)');
+			equals(U.typeOf($), 'function', '$');
+			equals(U.typeOf($('#qunit-fixture #foo'), true), 'jquery-object', '$(#foo)');
+			equals(U.typeOf($('#qunit-fixture b'), true), 'jquery-object', '$(b)');
+			equals(U.typeOf($, true), 'jquery-library', '$');
+
 
 			// .type support
-			equals(U.typeOf(U), 'library', 'U');
-			equals(U.typeOf(ModuleTest), 'module', 'ModuleTest');
+			equals(U.typeOf(U, true), 'library', 'U');
+			equals(U.typeOf(ModuleTest, true), 'module', 'ModuleTest');
 
 			// Literals
 			equals(U.typeOf(function(){}), 'function', 'function(){}');
@@ -81,7 +85,7 @@ var ModuleTest = (function(_this, $, U, undefined){
 		});
 
 		test('is()', function(){
-			ok(U.is(U, 'library'), 'library');
+			ok(U.is(U, 'library', true), 'library');
 			ok(U.is('foo', 'string'), 'string');
 			ok(!U.is('foo', 'number'), 'string != number');
 			ok(U.is(true, 'boolean'), 'boolean');
