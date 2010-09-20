@@ -34,14 +34,14 @@ var Boomworks_utils = (function(_this, window, undefined){
 
 	// Constructor
 	_this.initialise = function(){
-		old_u = window.u;
+		old_u = window.U;
 		//U.log('Initialising ' + _this.toString());
 		return window.U = _this;
 	};
 
 	//  No conflict
 	_this.no_conflict = _this.noConflict = function(){
-		window.u = old_u;
+		window.U = old_u;
 		return _this;
 	};
 
@@ -91,9 +91,11 @@ var Boomworks_utils = (function(_this, window, undefined){
 		var t = t.toLowerCase();
 
 		switch(t){
+
 			case 'bool':
 				t = 'boolean';
 				break;
+
 			case 'num':
 			case 'float':
 			case 'double':
@@ -106,7 +108,7 @@ var Boomworks_utils = (function(_this, window, undefined){
 				break;
 
 		}
-		
+
 		return _this.typeOf(v) === t;
 	};
 
