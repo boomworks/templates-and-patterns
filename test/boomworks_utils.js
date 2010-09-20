@@ -21,6 +21,7 @@ var Boomworks_utils = (function(_this, window, undefined){
 	/* **************************************************************************
 	 * Public properties
 	 */
+	_this.debug = _this.debug || false;
 	_this.type = 'library';
 	_this.module_name = 'Boomworks::utils';
 	_this.major_version = 0;
@@ -35,7 +36,7 @@ var Boomworks_utils = (function(_this, window, undefined){
 	// Constructor
 	_this.initialise = function(){
 		old_u = window.U;
-		//U.log('Initialising ' + _this.toString());
+		U.log('Initialising ' + _this.toString());
 		return window.U = _this;
 	};
 
@@ -50,6 +51,9 @@ var Boomworks_utils = (function(_this, window, undefined){
 
 	// Generic logging method 
 	_this.log = function(){
+
+		if(!_this.debug) return false;
+
 		try{
 			console.log.apply(console, arguments);
 		}catch(e){
