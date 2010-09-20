@@ -63,6 +63,9 @@ var Boomworks_utils = (function(_this, window, undefined){
 				alert(Array.prototype.join.call(arguments, ' '));
 			}
 		}
+
+		return true;
+
 	};
 
 
