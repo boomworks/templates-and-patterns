@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="nojs">
 <head>
 	<meta charset="utf-8">
 	<title>Site_title</title>
@@ -8,9 +8,7 @@
 	<link rel="stylesheet" media="screen,projection" href="css/screen.css">
 	<link rel="stylesheet" media="print" href="css/print.css">
 
-	<script>
-	if(document.getElementsByTagName) document.getElementsByTagName('html')[0].className = 'js-enabled';
-	</script>
+	<script>(function(B,C){B[C]=B[C].replace(/\bnojs\b/,'js')})(document.documentElement,'className');</script>
 	<!--[if lt IE 9]><script src="js/html5-shiv.js"></script><![endif]-->
 
 </head>
