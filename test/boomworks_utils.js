@@ -22,12 +22,16 @@ var Boomworks_utils = (function(_this, window, undefined){
 	 * Public properties
 	 */
 	_this.debug = _this.debug || false;
-	_this.type = 'library';
-	_this.module_name = 'Boomworks::utils';
-	_this.major_version = 0;
-	_this.minor_version = 0;
-	_this.revision = 1;
-	_this.version = [_this.major_version, _this.minor_version, _this.revision].join('.');
+
+	// Metadata
+	U.name = 'Boomworks::utils';
+	U.globals = ['Boomworks_utils', 'U'];
+	U.type = 'library';
+	U.major_version = 0;
+	U.minor_version = 0;
+	U.patch_version = 1;
+	U.special_version = '';
+	U.version = [U.major_version, U.minor_version, U.patch_version].join('.') + U.special_version;
 
 	/* **************************************************************************
 	 * Public methods
@@ -40,7 +44,7 @@ var Boomworks_utils = (function(_this, window, undefined){
 		return window.U = _this;
 	};
 
-	//  No conflict
+	// No conflict
 	_this.no_conflict = _this.noConflict = function(){
 		window.U = old_u;
 		return _this;
@@ -136,8 +140,45 @@ var Boomworks_utils = (function(_this, window, undefined){
 	};
 
 
+
+	/* **************************************************************************
+	 * Loading & prefetching of external resources
+	 */
+
+	// Asynchonously load a list of resources in order
+	_this.load = function(uris, type, ctx, success){
+		var d = document,
+				type = type || 'text/javascript',
+		    ctx = ctx || d.getElementsByTagName('head')[0],
+				success = success || function(){return arguments;},
+				node, node_type = 'script',
+				i = 0, uris_length = uris.length, uri, loaded = 0
+		;
+
+		for(i; i < uris_length; i++){
+			uri = uris[i];
+			node = d.createElement('object');
+			node.data = uri;
+			ctx.appendChild(node);
+
+			node.onload = function(){
+				ctx.removeChild(this);
+				if(++loaded === uris_length){
+					for(i = 0; i < uris_length; i++){
+						uri = uris[i];
+						node = d.createElement(node_type);
+						node.src = uri;
+						ctx.appendChild(node);
+					}
+					return success.call(uris, type, ctx, success);
+				}
+			}
+		}
+
+	};
+
 	_this.toString = function(){
-		return _this.module_name + ' v' + _this.version;
+		return _this.name + ' v' + _this.version;
 	};
 
 	/* **************************************************************************
