@@ -1,4 +1,15 @@
 var BWX = {
+
+	/**
+	* Prefetches & then appends a list of resources
+	* TODO:
+	* - Resources aren't cached in Chrome OSX
+	*	- Test in IE
+	* @argument {Array} uris URIs of resources you want to load
+	* @argument {String} type Optional - MIME type of resources, defaults to 'text/javascript'
+	* @argument {DOMElement} ctx Optional - The context to which resources should be attached
+	* @argument {Function} success Optinal - Callback function to be executed when all resources have been successfully loaded
+	*/
 	load: function(uris, type, ctx, success){
 		var d = document, // Cache document
 				type = type || 'text/javascript', // Default type to JS
@@ -12,12 +23,14 @@ var BWX = {
 		for(i; i < uris_length; i++){
 			uri = uris[i];
 			node = d.createElement('object');
+			node.type = type;
 			node.data = uri;
-			ctx.appendChild(node);
+			d.body.appendChild(node);
 
 			// When the resource has loaded, remove the node & increment counter
 			node.onload = function(){
-				ctx.removeChild(this);
+
+				d.body.removeChild(this);
 
 				// If all the resources have been loaded, loop over URIs & append the relevant element to context
 				if(++loaded === uris_length){
@@ -31,7 +44,7 @@ var BWX = {
 					// Call the success function
 					return success.call(uris, type, ctx, success);
 				}
-			}
+			};
 		}
 
 	}
