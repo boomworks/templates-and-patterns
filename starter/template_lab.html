@@ -13,10 +13,10 @@
 
 	<script src="js/LAB-1.0.4.min.js"></script>
 	<script>
-	$LAB
-		.script('js/jquery-1.4.4.min.js')
-		.script('js/underscore-1.1.3.min.js').wait()
-		.script('js/application-name.js');
+	$LAB.setOptions({BasePath: 'js/'})
+		.script('jquery-1.4.4.min.js')
+		.script('underscore-1.1.3.min.js').wait()
+		.script('application-name.js');
 	</script>
 
 	<script>//var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=true;g.src=(document.location.protocol=='https:'?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s);}(document,'script'));</script>
