@@ -15,22 +15,18 @@
 </head>
 <body>
 
-	<header>
-
-		<ul id="skip-navigation">
-			<li><a href="#content">Skip to content</a></li>
-			<li><a href="#navigation">Skip to navigation</a></li>
-		</ul>
+	<header role="banner">
 
 		<hgroup>
-			<h1>Site_title</h1>
-			<h2>Site_tagline</h2>
+			<a href="/">
+				<h1>Site_title</h1>
+				<h2>Site_tagline</h2>
+			</a>
 		</hgroup>
 
-		<div>search</div>
+		<div role="search">search</div>
 
-		<!-- Primary navigation -->
-		<nav id="navigation">
+		<nav role="navigation">
 			<ul>
 				<li><a href="#">Nav_item</a></li>
 				<li><a href="#">Nav_item</a></li>
@@ -40,14 +36,16 @@
 
 	</header>
 
-	<section id="content">
+	<section id="content" role="main">
 
 		<aside>
-			<ul id="secondary-navigation">
-				<li><a href="#">Nav_item</a></li>
-				<li><a href="#">Nav_item</a></li>
-				<li><a href="#">Nav_item</a></li>
-			</ul>
+			<nav role="navigation">
+				<ul>
+					<li><a href="#">Nav_item</a></li>
+					<li><a href="#">Nav_item</a></li>
+					<li><a href="#">Nav_item</a></li>
+				</ul>
+			</nav>
 		</aside>
 
 		<article>
@@ -58,7 +56,7 @@
 			</aside>
 		</article>
 
-		<aside>
+		<aside role="complementary">
 
 			<!-- Foo Module -->
 			<section class="module">
@@ -69,26 +67,33 @@
 					</hgroup>
 					<p>Other</p>
 				</header>
-				<div class="module-content">
-					<p>content</p>
-				</div>
+				<section>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</section>
 				<footer>
 					<p>Other</p>
 				</footer>
 			</section>
+			<!-- / Foo Module -->
 
 		</aside>
 
 	</section>
 
 	<footer>
-		<ul id="footer-navigation">
-			<li><a href="#">Nav_item</a></li>
-			<li><a href="#">Nav_item</a></li>
-			<li><a href="#">Nav_item</a></li>
-		</ul>
+		<nav>
+			<ul>
+				<li><a href="#">Nav_item</a></li>
+				<li><a href="#">Nav_item</a></li>
+				<li><a href="#">Nav_item</a></li>
+			</ul>
+		</nav>
 
-		<p>Copyright</p>
+		<p role="contentinfo">Copyright</p>
 
 	</footer>
 
