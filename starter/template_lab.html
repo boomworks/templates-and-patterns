@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en" class="nojs">
+<head>
+	<meta charset="utf-8">
+	<title>Site_title</title>
+
+	<link rel="stylesheet" media="screen,projection" href="css/screen.css">
+	<link rel="stylesheet" media="print" href="css/print.css">
+
+	<script>(function(B,C){B[C]=B[C].replace(/\bnojs\b/,'js')})(document.documentElement,'className');</script>
+	<!--[if lt IE 9]><script src="js/html5-shiv.js"></script><![endif]-->
+
+	<script src="js/LAB-1.0.4.min.js"></script>
+	<script>
+	$LAB
+		.script('js/jquery-1.4.4.min.js')
+		.script('js/underscore-1.1.3.min.js').wait()
+		.script('js/application-name.js');
+	</script>
+
+	<script>var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=true;g.src=(document.location.protocol=='https:'?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s);}(document,'script'));</script>
+
+</head>
+<body>
+
+	<header role="banner">
+
+		<hgroup>
+			<a href="/">
+				<h1>Site_title</h1>
+				<h2>Site_tagline</h2>
+			</a>
+		</hgroup>
+
+		<div role="search">search</div>
+
+		<nav role="navigation">
+			<ul>
+				<li><a href="#">Nav_item</a></li>
+				<li><a href="#">Nav_item</a></li>
+				<li><a href="#">Nav_item</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<section id="content" role="main">
+
+		<aside>
+			<nav role="navigation">
+				<ul>
+					<li><a href="#">Nav_item</a></li>
+					<li><a href="#">Nav_item</a></li>
+					<li><a href="#">Nav_item</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<article>
+			<p>content</p>
+
+			<aside>
+				Relatedcontent
+			</aside>
+		</article>
+
+		<aside role="complementary">
+
+			<!-- Foo Module -->
+			<section class="module">
+				<header>
+					<hgroup>
+						<h1>Module_header</h1>
+						<h2>Module_subheader</h2>
+					</hgroup>
+					<p>Other</p>
+				</header>
+				<section>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</section>
+				<footer>
+					<p>Other</p>
+				</footer>
+			</section>
+			<!-- / Foo Module -->
+
+		</aside>
+
+	</section>
+
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="#">Nav_item</a></li>
+				<li><a href="#">Nav_item</a></li>
+				<li><a href="#">Nav_item</a></li>
+			</ul>
+		</nav>
+
+		<p role="contentinfo">Copyright</p>
+
+	</footer>
+
+</body>
+</html>
