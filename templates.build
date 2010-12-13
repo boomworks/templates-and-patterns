@@ -7,7 +7,7 @@
 		<property name="ClosureCompilerPath" value="C:\Program Files\closure-compiler\"/>
 		<property name="YUICompressorPath" value="C:\Program Files\yuicompressor-2.4.2\build\"/>
 
-    <call target="compress-js" />
+		<call target="compress-js" />
 		<!--<call target="compress-css" />-->
 
   </target>
@@ -38,14 +38,14 @@
 
   <target name="compress-js">
     <foreach item="File" property="filename">
-      <in>
-        <items basedir="js/">
+			<in>
+				<items basedir="js/">
 					<include name="/**/*.js" />
 					<exclude name="/**/html5-shiv.js"/>
-          <exclude name="/**/*.min.js" />
-          <exclude name="/**/*.pack.js" />
-        </items>
-      </in>
+					<exclude name="/**/*.min.js" />
+					<exclude name="/**/*.pack.js" />
+				</items>
+			</in>
       <do>
         <exec basedir="." program="${JavaPath}java" commandline=" -jar &quot;${ClosureCompilerPath}compiler.jar&quot; --js &quot;${filename}&quot; --js_output_file &quot;${string::replace(filename, '.js', '.min.js')}&quot;" failonerror="true" />
       </do>
