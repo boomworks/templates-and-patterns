@@ -5,8 +5,7 @@
 	<!-- http://nantcontrib.sourceforge.net/ -->
 	<loadtasks assembly="./lib/nantcontrib-0.85/bin/NAnt.Contrib.Tasks.dll" />
 
-	<property name="JavaPath" value="${environment::get-variable('JAVA_HOME')}/bin/"/><!-- TODO: check if empty -->
-
+	<property name="JavaPath" value="${environment::get-variable('JAVA_HOME')}"/>
 	<if test="${environment::get-variable('JAVA_HOME') = ''}">
 		<echo message="Please set your JAVA_HOME environment variable to wherever you installed Java"/>
 	</if>
@@ -29,7 +28,7 @@
 
   <target name="java-test">
   <echo message="${JavaPath}"/>
-		<exec basedir="." program="${JavaPath}java" commandline=" -version" failonerror="true" />
+		<exec basedir="." program="${JavaPath}bin/java" commandline=" -version" failonerror="true" />
   </target>
 
 
@@ -46,6 +45,26 @@
 			</concat>
 		</foreach>
 
+		<property name="filename" value="${AppPrefix}-${build.date}.js"/>
+		<call target="compress-js-file"/>
+
+	</target>
+
+	<target name="concatenate-css">
+		<tstamp property="build.date" pattern="yyyyMMddHHmmss" verbose="true" />
+		<property name="ConcattedFileName" value="css/${AppPrefix}-${build.date}.css"/>
+
+		<foreach item="String" in="${CSSFiles}" delim=" " property="filename">
+			<concat destfile="${ConcattedFileName}" append="true">
+				<fileset>
+					<include name="${filename}"/>
+				</fileset>
+			</concat>
+		</foreach>
+
+		<property name="filename" value="${AppPrefix}-${build.date}.css"/>
+		<call target="compress-css-file"/>
+
 	</target>
 
   <target name="compress-js">
@@ -59,9 +78,12 @@
 				</items>
 			</in>
       <do>
-        <exec basedir="." program="${JavaPath}java" commandline=" -jar &quot;${ClosureCompilerPath}compiler.jar&quot; --js &quot;${filename}&quot; --js_output_file &quot;${string::replace(filename, '.js', '.min.js')}&quot;" failonerror="true" />
+				<call target="compress-js-file"/>
       </do>
     </foreach>
+  </target>
+  <target name="compress-js-file">
+		<exec basedir="." program="${JavaPath}bin/java" commandline=" -jar &quot;${ClosureCompilerPath}compiler.jar&quot; --js &quot;${filename}&quot; --js_output_file &quot;${string::replace(filename, '.js', '.min.js')}&quot;" failonerror="true" />
   </target>
 
   <target name="compress-css">
@@ -74,9 +96,12 @@
         </items>
       </in>
       <do>
-        <exec basedir="." program="${JavaPath}java" commandline=" -jar &quot;${YUICompressorPath}yuicompressor-2.4.2.jar&quot; --type css --charset utf-8 -o &quot;${string::replace(filename, '.css', '.min.css'}&quot; &quot;${filename}&quot;" failonerror="true" />
+				<call target="compress-css-file"/>      
       </do>
     </foreach>
+  </target>
+  <target name="compress-css-file">
+		<exec basedir="." program="${JavaPath}bin/java" commandline=" -jar &quot;${YUICompressorPath}yuicompressor-2.4.2.jar&quot; --type css --charset utf-8 -o &quot;${string::replace(filename, '.css', '.min.css'}&quot; &quot;${filename}&quot;" failonerror="true" />
   </target>
 
 	<target name="optimise-images">
