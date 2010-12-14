@@ -5,8 +5,8 @@
 	<!-- http://nantcontrib.sourceforge.net/ -->
 	<loadtasks assembly="./lib/nantcontrib-0.85/bin/NAnt.Contrib.Tasks.dll" />
 
-	<property name="JavaPath" value="${environment::get-variable('JAVA_HOME')}"/>
-	<if test="${environment::get-variable('JAVA_HOME') = ''}">
+	<property name="JavaPath" value="${environment::get-variable('JAVA_HOME')}" if="${environment::variable-exists('JAVA_HOME')}"/>
+	<if test="${not(property::exists('JavaPath'))}">
 		<echo message="Please set your JAVA_HOME environment variable to wherever you installed Java"/>
 	</if>
 
@@ -21,17 +21,14 @@
 
 
   <target name="deploy-prep" description="">
-		<call target="compress-js" />
-		<!--<call target="compress-css" />-->
-
+		<call target="concatenate-js" />
+		<call target="concatenate-js" />
+		<call target="optimise-images" />
   </target>
 
   <target name="java-test">
-  <echo message="${JavaPath}"/>
 		<exec basedir="." program="${JavaPath}bin/java" commandline=" -version" failonerror="true" />
   </target>
-
-
 
 	<target name="concatenate-js">
 		<tstamp property="build.date" pattern="yyyyMMddHHmmss" verbose="true" />
@@ -105,12 +102,13 @@
   </target>
 
 	<target name="optimise-images">
+		<!-- TODO: other image formats, other platforms -->
 		<property name="PNGCrushExecutable" value="./lib/pngcrush-1.6.10/pngcrush"/>
 		<if test="${platform::is-windows()}">
 			<property name="PNGCrushExecutable" value="./lib/pngcrush-1.6.10/pngcrush.exe"/>
 		</if>
 		<exec basedir="." program="${PNGCrushExecutable}" commandline=" -d images/crushed -brute images/*.png" failonerror="true" />
-		<!-- This doesn;t seem to work...
+		<!-- This doesn't seem to work...
 		<move todir="./images">
 			<fileset basedir="./images/crushed">
 					<include name="*.png" />
