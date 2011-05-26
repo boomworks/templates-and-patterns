@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="nojs">
+<html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8">
 	<title>Site_title</title>
@@ -8,9 +8,12 @@
 	<link rel="stylesheet" media="screen,projection" href="css/screen.css">
 	<link rel="stylesheet" media="print" href="css/print.css">
 
-	<script>(function(B,C){B[C]=B[C].replace(/\bnojs\b/,'js')})(document.documentElement,'className');</script>
+	<script>
+	document.getElementsByTagName('html')[0].className='js';
+	//(function(B,C){B[C]=B[C].replace(/\bno-js\b/,'js')})(document.getElementsByTagName('html')[0],'className');
+	//var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=true;g.src=(document.location.protocol=='https:'?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s);}(document,'script'));
+	</script>
 	<!--[if lt IE 9]><script src="js/html5-shiv.js"></script><![endif]-->
-	<script>//var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=true;g.src=(document.location.protocol=='https:'?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s);}(document,'script'));</script>
 
 </head>
 <body>
@@ -85,7 +88,7 @@
 	</section>
 
 	<footer>
-		<nav>
+		<nav role="navigation">
 			<ul>
 				<li><a href="#">Nav_item</a></li>
 				<li><a href="#">Nav_item</a></li>
