@@ -66,8 +66,15 @@ header, #main, footer {
 
 nav ul, nav li {
 	display: inline-block;
+	margin: 0;
 	padding: 0;
+	letter-spacing: -4px;
 }
+
+nav li {
+	letter-spacing: normal;
+}
+
 
 
 /* Skip navigation links */
@@ -138,6 +145,27 @@ header a:link, header a:visited {
 	color: #E0DED3;
 	text-decoration: none;
 }
+
+#primary-navigation {
+	margin-left: 10px;
+	vertical-align: top;
+	border-left: 1px solid rgba(0,0,0,0.4);
+	border-right: 1px solid rgba(255,255,255,0.4);
+}
+
+#primary-navigation a {
+	display: block;
+	height: 32px;
+	padding: 10px 20px;
+	background: rgba(255,255,255,0.2);
+	border-left: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+#primary-navigation a:hover {
+	background: rgba(255,255,255,0.3);
+}
+
 
 /* Main content area */
 #main {
