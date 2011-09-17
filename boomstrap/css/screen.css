@@ -275,6 +275,10 @@ footer {
 	border-top: 1px solid #e3e3e3;
 }
 
+footer ul {
+	letter-spacing: normal;
+}
+
 footer li:after {
 	content: " |";
 }
