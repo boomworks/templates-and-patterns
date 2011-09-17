@@ -162,7 +162,6 @@ h3 {
 }
 h4 {
 	font-size: 1.4em;
-	font-weight: bold;
 }
 h5 {
 	font-size: 1.2em;
@@ -173,7 +172,7 @@ h6 {
 	font-weight: bold;
 }
 
-h1 small {
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 	font-size: 0.75em;
 	color: #999;
 }
