@@ -205,6 +205,19 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 	color: #999;
 }
 
+h5 small {
+	font-size: 0.85714em;
+}
+
+h6 small {
+	font-size: 1em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+}
+
+
 ul, ol {
 	padding: 0 0 0 1.3em;
 }
