@@ -1,0 +1,153 @@
+/* ========================================================================= */
+/* Basic page layout */
+
+#page-wrapper {
+	position: relative;
+}
+
+header, #main, footer {
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+nav ul, nav li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	letter-spacing: -4px;
+}
+
+nav li {
+	letter-spacing: normal;
+}
+
+
+
+/* Skip navigation links */
+#skipnav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 32768;
+}
+
+#skipnav a {
+	position: absolute;
+	left: -1000px;
+	width: 300px;
+	height: 20px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 7px 10px;
+	background: #fff;
+	font-size: 1.4em;
+	text-align: center;
+	-webkit-border-radius: 0 0 7px 7px;
+	-moz-border-radius: 0 0 7px 7px;
+	border-radius: 0 0 7px 7px;
+}
+
+#skipnav a:focus {
+	left: 0;
+	outline: none;
+}
+
+/* Header */
+#header-wrapper {
+	background: #3f4c6b;
+	background: -moz-linear-gradient(top, #3f4c6b 0%, #000033 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4c6b), color-stop(100%,#000033));
+	background: -webkit-linear-gradient(top, #3f4c6b 0%,#000033 100%);
+	background: -o-linear-gradient(top, #3f4c6b 0%,#000033 100%);
+	background: -ms-linear-gradient(top, #3f4c6b 0%,#000033 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#000033',GradientType=0 );
+	background: linear-gradient(top, #3f4c6b 0%,#000033 100%);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	margin-bottom: 10px;
+}
+
+header {
+	font-size: 1.4em;
+}
+
+header #logo, header nav {
+	display: inline-block;
+}
+
+header #logo {
+	margin: 10px 10px 10px 0;
+	font-weight: bold;
+}
+
+header #logo img {
+	vertical-align: middle;
+}
+
+header a:link, header a:visited {
+	color: #E0DED3;
+	text-decoration: none;
+}
+
+#primary-navigation {
+	margin-left: 10px;
+	vertical-align: top;
+	border-left: 1px solid rgba(0,0,0,0.4);
+	border-right: 1px solid rgba(255,255,255,0.4);
+}
+
+#primary-navigation a {
+	display: block;
+	height: 32px;
+	padding: 10px 20px;
+	background: rgba(255,255,255,0.2);
+	border-left: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(0,0,0,0.2);
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: background-color;
+	-moz-transition-duration: 1s;
+	transition-property: background-color;
+	transition-duration: 1s;
+}
+
+#primary-navigation a:hover {
+	background: rgba(255,255,255,0.3);
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
+
+/* Main content area */
+#main {
+	font-size: 1.2em;
+}
+
+/* Secondary navigation */
+#secondary-navigation ul, #secondary-navigation li {
+	display: block;
+}
+
+/* Sidebar */
+
+/* Footer */
+footer {
+	margin-top: 10px;
+	padding: 10px;
+	border-top: 1px solid #e3e3e3;
+}
+
+footer ul {
+	letter-spacing: normal;
+}
+
+footer li:after {
+	content: " |";
+}
+footer li:last-child:after {
+	content: "";
+}
+

@@ -1,0 +1,134 @@
+/* ========================================================================= */
+/* Base styles */
+
+body {
+	margin: 0;
+	font: 62.5%/1.5 "Helvetica Neue",Arial,sans-serif;
+	color: #333;
+	background: #fff;
+}
+
+section, article, header, nav, aside, footer, video, dialog, figure, address {
+  display: block;
+}
+
+img {
+	border: none;
+}
+
+input, select, textarea, button {
+	font-family: inherit;
+	font-size: 1em;
+	color: #333;
+}
+
+a:link {
+	color: #5757ff;
+}
+
+a:visited {
+	color: #9a57ff;
+}
+
+a:hover, a:active {
+	color: #9a57ff;
+}
+
+::-moz-selection {
+	background: #333;
+	color: #fff;
+}
+
+::selection {
+	background: #333;
+	color: #fff;
+}
+
+/* Reset - still not sure this is a good idea */
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+}
+
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-size: 0.75em;
+	color: #999;
+}
+
+h5 small {
+	font-size: 0.85714em;
+}
+
+h6 small {
+	font-size: 1em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+}
+
+
+ul, ol {
+	list-style-type: none;
+	padding: 0 0 0 1.3em;
+}
+
+ul {
+	list-style-type: disc;
+}
+ul ul {
+	list-style-type: circle;
+}
+ul ul ul {
+	list-style-type: square;
+}
+
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style-type: upper-roman;
+}
+ol ol ol {
+	list-style-type: lower-roman;
+}
+
+dl {
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 2em;
+}
+
+.intro {
+	font-size: 1.16667em;
+}
+
