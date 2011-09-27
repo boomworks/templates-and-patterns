@@ -22,16 +22,16 @@ input, select, textarea, button {
 	color: #333;
 }
 
-a:link {
-	color: #5757ff;
-}
-
-a:visited {
-	color: #9a57ff;
-}
-
-a:hover, a:active {
-	color: #9a57ff;
+a {
+	&:link {
+		color: $link_colour;
+	}
+	&:visited {
+		color: $link_visited_colour;
+	}
+	&:hover, &:active {
+		color: $link_hover_colour;
+	}
 }
 
 ::-moz-selection {
