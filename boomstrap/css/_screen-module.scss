@@ -1,28 +1,6 @@
 /* ========================================================================= */
 /* Modules */
 
-/* Mixins */
-@mixin clearfix($selector: \.clearfix) {
-	#{$selector} {
-		zoom: 1;
-		&:before,
-		&:after {
-			content: ".";
-			display: block;
-			overflow: hidden;
-			visibility: hidden;
-			font-size: 0;
-			line-height: 0;
-			width: 0;
-			height: 0;
-		}
-		&:after {
-			clear: both;
-		}
-	}
-}
-
-
 /* Base modules */
 @include clearfix(\.module-group);
 .module-group {
