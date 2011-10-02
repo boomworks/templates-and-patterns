@@ -26,12 +26,12 @@ nav li {
 /* Skip navigation links */
 #skipnav {
 	position: absolute;
+	z-index: 32768;
 	top: 0;
 	left: 0;
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	z-index: 32768;
+	list-style-type: none;
 }
 
 #skipnav a {
@@ -40,14 +40,14 @@ nav li {
 	width: 300px;
 	height: 20px;
 	margin: 0 auto;
-	overflow: hidden;
 	padding: 7px 10px;
-	background: #fff;
-	font-size: 1.4em;
-	text-align: center;
 	-webkit-border-radius: 0 0 7px 7px;
 	-moz-border-radius: 0 0 7px 7px;
 	border-radius: 0 0 7px 7px;
+	overflow: hidden;
+	background: #fff;
+	font-size: 1.4em;
+	text-align: center;
 }
 
 #skipnav a:focus {
@@ -58,8 +58,8 @@ nav li {
 /* Header */
 #header-wrapper {
 	@include gradient-bg($header_start_colour, $header_end_colour);
-	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 	margin-bottom: 10px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
 header {
@@ -86,18 +86,18 @@ header a:link, header a:visited {
 
 #primary-navigation {
 	margin-left: 10px;
-	vertical-align: top;
-	border-left: 1px solid rgba(0,0,0,0.4);
 	border-right: 1px solid rgba(255,255,255,0.4);
+	border-left: 1px solid rgba(0,0,0,0.4);
+	vertical-align: top;
 }
 
 #primary-navigation a {
 	display: block;
 	height: 32px;
 	padding: 10px 20px;
-	background: rgba(255,255,255,0.2);
 	border-left: 1px solid rgba(255,255,255,0.2);
 	border-right: 1px solid rgba(0,0,0,0.2);
+	background: rgba(255,255,255,0.2);
 	@include transition(background-color);
 }
 
