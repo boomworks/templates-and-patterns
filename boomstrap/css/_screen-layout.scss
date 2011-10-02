@@ -5,7 +5,7 @@
 	position: relative;
 }
 
-header, #main, footer {
+#header-wrapper > header, #main, #header-wrapper > footer {
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -62,24 +62,24 @@ nav li {
 	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
-header {
+#header-wrapper > header {
 	font-size: 1.4em;
 }
 
-header #logo, header nav {
+#header-wrapper > header #logo, #header-wrapper > header nav {
 	display: inline-block;
 }
 
-header #logo {
+#header-wrapper > header #logo {
 	margin: 10px 10px 10px 0;
 	font-weight: bold;
 }
 
-header #logo img {
+#header-wrapper > header #logo img {
 	vertical-align: middle;
 }
 
-header a:link, header a:visited {
+#header-wrapper > header a:link, #header-wrapper > header a:visited {
 	color: $header_link_colour;
 	text-decoration: none;
 }
@@ -97,12 +97,12 @@ header a:link, header a:visited {
 	padding: 10px 20px;
 	border-left: 1px solid rgba(255,255,255,0.2);
 	border-right: 1px solid rgba(0,0,0,0.2);
-	background: rgba(255,255,255,0.2);
 	@include transition(background-color);
 }
 
 #primary-navigation a:hover {
 	background: rgba(255,255,255,0.3);
+	background: rgba(255,255,255,0.2);
 	@include transition(background-color, 0.2s);
 }
 
@@ -120,20 +120,20 @@ header a:link, header a:visited {
 /* Sidebar */
 
 /* Footer */
-footer {
+#footer-wrapper > footer {
 	margin-top: 10px;
 	padding: 10px;
 	border-top: 1px solid #e3e3e3;
 }
 
-footer ul {
+#footer-wrapper > footer ul {
 	letter-spacing: normal;
 }
 
-footer li:after {
+#footer-wrapper > footer li:after {
 	content: " |";
 }
-footer li:last-child:after {
+#footer-wrapper > footer li:last-child:after {
 	content: "";
 }
 
