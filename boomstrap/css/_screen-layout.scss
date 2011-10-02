@@ -98,19 +98,12 @@ header a:link, header a:visited {
 	background: rgba(255,255,255,0.2);
 	border-left: 1px solid rgba(255,255,255,0.2);
 	border-right: 1px solid rgba(0,0,0,0.2);
-	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 1s;
-	-moz-transition-property: background-color;
-	-moz-transition-duration: 1s;
-	transition-property: background-color;
-	transition-duration: 1s;
+	@include transition(background-color);
 }
 
 #primary-navigation a:hover {
 	background: rgba(255,255,255,0.3);
-	-webkit-transition-duration: 0.2s;
-	-moz-transition-duration: 0.2s;
-	transition-duration: 0.2s;
+	@include transition(background-color, 0.2s);
 }
 
 

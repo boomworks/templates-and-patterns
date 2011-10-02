@@ -33,3 +33,9 @@
 	background: linear-gradient(top, $header_start_colour 0%, $header_end_colour 100%);
 }
 
+@mixin transition($properties: all, $duration: 1s, $timing_function: ease, $delay: 0s) {
+	-webkit-transition: $properties $duration $timing_function $delay;
+	-moz-transition: $properties $duration $timing_function $delay;
+	-o-transition: $properties $duration $timing_function $delay;
+	transition: $properties $duration $timing_function $delay;
+}

@@ -235,47 +235,46 @@ header a:link, header a:visited {
   background: rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-transition-property: background-color;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: background-color;
-  -moz-transition-duration: 1s;
-  transition-property: background-color;
-  transition-duration: 1s; }
+  -webkit-transition: background-color 1s ease 0s;
+  -moz-transition: background-color 1s ease 0s;
+  -o-transition: background-color 1s ease 0s;
+  transition: background-color 1s ease 0s; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003104}}
 #primary-navigation a:hover {
   background: rgba(255, 255, 255, 0.3);
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  transition-duration: 0.2s; }
+  -webkit-transition: background-color 0.2s ease 0s;
+  -moz-transition: background-color 0.2s ease 0s;
+  -o-transition: background-color 0.2s ease 0s;
+  transition: background-color 0.2s ease 0s; }
 
 /* Main content area */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003111}}
 #main {
   font-size: 1.2em; }
 
 /* Secondary navigation */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003116}}
 #secondary-navigation ul, #secondary-navigation li {
   display: block; }
 
 /* Sidebar */
 /* Footer */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003123}}
 footer {
   margin-top: 10px;
   padding: 10px;
   border-top: 1px solid #e3e3e3; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003129}}
 footer ul {
   letter-spacing: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003133}}
 footer li:after {
   content: " |"; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003136}}
 footer li:last-child:after {
   content: ""; }
 
