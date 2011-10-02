@@ -42,94 +42,88 @@ a:hover, a:active {
   color: #fff; }
 
 /* Reset - still not sure this is a good idea */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000348}}
 h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0 0 10px;
   padding: 0;
   border: 0;
   font-weight: normal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000353}}
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, p small, ul small, ol small {
+    font-size: 0.75em;
+    color: #999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000357}}
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, ul a, ol a {
+    text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000361}}
 h1 {
   font-size: 2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000364}}
 h2 {
   font-size: 1.8em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000367}}
 h3 {
   font-size: 1.6em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000370}}
 h4 {
   font-size: 1.4em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000373}}
 h5 {
   font-size: 1.2em;
   font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000376}}
+  h5 small {
+    font-size: 0.85714em;
+    color: #999; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000381}}
 h6 {
   font-size: 1em;
   font-weight: bold; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000377}}
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 0.75em;
-  color: #999; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000382}}
-h5 small {
-  font-size: 0.85714em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000386}}
-h6 small {
-  font-size: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000384}}
+  h6 small {
+    font-size: 1em;
+    color: #999; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000390}}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  text-decoration: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000395}}
 ul, ol {
   list-style-type: none;
   padding: 0 0 0 1.3em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000395}}
 ul {
   list-style-type: disc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000397}}
+  ul ul {
+    list-style-type: circle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\0000399}}
+    ul ul ul {
+      list-style-type: square; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003103}}
-ul ul {
-  list-style-type: circle; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003106}}
-ul ul ul {
-  list-style-type: square; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003105}}
 ol {
   list-style-type: decimal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003107}}
+  ol ol {
+    list-style-type: upper-roman; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003109}}
+    ol ol ol {
+      list-style-type: lower-roman; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003113}}
-ol ol {
-  list-style-type: upper-roman; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003116}}
-ol ol ol {
-  list-style-type: lower-roman; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003117}}
 dt {
   font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003120}}
 dd {
   margin-left: 2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-base\.scss}line{font-family:\00003124}}
 .intro {
   font-size: 1.16667em; }
 
@@ -196,41 +190,42 @@ nav li {
   background: -webkit-linear-gradient(top, #3f4c6b 0%, #000033 100%);
   background: -o-linear-gradient(top, #3f4c6b 0%, #000033 100%);
   background: -ms-linear-gradient(top, #3f4c6b 0%, #000033 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
+  /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
   background: linear-gradient(top, #3f4c6b 0%, #000033 100%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000373}}
 header {
   font-size: 1.4em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000377}}
 header #logo, header nav {
   display: inline-block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000381}}
 header #logo {
   margin: 10px 10px 10px 0;
   font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000386}}
 header #logo img {
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000390}}
 header a:link, header a:visited {
   color: #e0ded3;
   text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\0000395}}
 #primary-navigation {
   margin-left: 10px;
   vertical-align: top;
   border-left: 1px solid rgba(0, 0, 0, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.4); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003102}}
 #primary-navigation a {
   display: block;
   height: 32px;
@@ -245,7 +240,7 @@ header a:link, header a:visited {
   transition-property: background-color;
   transition-duration: 1s; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003117}}
 #primary-navigation a:hover {
   background: rgba(255, 255, 255, 0.3);
   -webkit-transition-duration: 0.2s;
@@ -253,32 +248,32 @@ header a:link, header a:visited {
   transition-duration: 0.2s; }
 
 /* Main content area */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003126}}
 #main {
   font-size: 1.2em; }
 
 /* Secondary navigation */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003131}}
 #secondary-navigation ul, #secondary-navigation li {
   display: block; }
 
 /* Sidebar */
 /* Footer */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003138}}
 footer {
   margin-top: 10px;
   padding: 10px;
   border-top: 1px solid #e3e3e3; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003144}}
 footer ul {
   letter-spacing: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003148}}
 footer li:after {
   content: " |"; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-layout\.scss}line{font-family:\00003151}}
 footer li:last-child:after {
   content: ""; }
 

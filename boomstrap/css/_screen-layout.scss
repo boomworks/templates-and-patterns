@@ -63,7 +63,8 @@ nav li {
 	background: -webkit-linear-gradient(top, $header_start_colour 0%, $header_end_colour 100%);
 	background: -o-linear-gradient(top, $header_start_colour 0%, $header_end_colour 100%);
 	background: -ms-linear-gradient(top, $header_start_colour 0%, $header_end_colour 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
+	/* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
 	background: linear-gradient(top, $header_start_colour 0%, $header_end_colour 100%);
 	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 	margin-bottom: 10px;
