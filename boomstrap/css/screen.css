@@ -277,34 +277,72 @@ footer li:after {
 footer li:last-child:after {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\000034}}
+/* ========================================================================= */
+/* Modules */
+/* Mixins */
+/* Base modules */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module\.scss}line{font-family:\000036}}
+\.module-group {
+  zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module\.scss}line{font-family:\000039}}
+  \.module-group:before, \.module-group:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module\.scss}line{font-family:\0000319}}
+  \.module-group:after {
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module\.scss}line{font-family:\0000331}}
+.module {
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module\.scss}line{font-family:\0000333}}
+  .module header, .module .header {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module\.scss}line{font-family:\0000336}}
+  .module .content {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module\.scss}line{font-family:\0000339}}
+  .module footer, .module .footer {
+    position: relative; }
+
+/* ========================================================================= */
+/* Units, prices, etc. */
+/* Generic units */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\000037}}
 .unit .prefix {
   vertical-align: top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000311}}
 .unit .minor {
   font-size: 1.4em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000315}}
 .unit .decimal {
   vertical-align: top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000319}}
 .unit .major {
   vertical-align: top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000323}}
 .unit .suffix {
   vertical-align: top; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000327}}
+/* Prices */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000331}}
 .price .currency {
   vertical-align: top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000335}}
 .price .dollars {
   font-size: 1.4em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000339}}
 .price .decimal {
   vertical-align: top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000343}}
 .price .cents {
   vertical-align: top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lindsayevans\/Projects\/templates-and-patterns\/boomstrap\/css\/_screen-module-units\.scss}line{font-family:\0000347}}
 .price .per {
   vertical-align: top; }
