@@ -28,7 +28,8 @@ do{
 
 // Defaulting arguments
 function foo(speed){
-	var speed = speed || 'damn fast';
+	// No need to var this, as it's already in this functions scope
+	speed = speed || 'damn fast';
 }
 
 // Group variable definitions at top of function
@@ -44,7 +45,8 @@ function foo(){
 // Early bailout - Return as early as possible to avoid overhead 
 function foo(bar){
 
-	if(bar === null) return false;
+	// No need for strict equality in this case, as undefined == null
+	if(bar == null) return false;
 
 	// Something that would suck CPU like a Dyson
 
