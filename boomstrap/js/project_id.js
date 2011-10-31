@@ -12,7 +12,9 @@
 
 /*jslint eqeqeq: true */
 
-var ProjectName = (function(_this, window, document, $, undefined){
+require(['jquery'], function($){
+
+	var _this = window.ProjectName || {};
 
 	// Metadata
 	_this.meta = {
@@ -33,6 +35,7 @@ var ProjectName = (function(_this, window, document, $, undefined){
 	_this.initialise = function(){
 		// Initialise application
 		// Return self
+		console.log($);
 		return _this;
 	};
 
@@ -60,6 +63,6 @@ var ProjectName = (function(_this, window, document, $, undefined){
 	;
 
 	// Call constructor & return self
-	return _this.initialise();
+	return window.ProjectName = _this.initialise();
 
-}(ProjectName || {}, window, document, jQuery));
+});
