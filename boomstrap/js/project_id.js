@@ -12,9 +12,9 @@
 
 /*jslint eqeqeq: true */
 
-require(['jquery'], function($){
+require(['jquery', 'underscore', 'js/jquery.easing-1.3.js'], function($, _){
 
-	var _this = window.ProjectName || {};
+	var _this = {};
 
 	// Metadata
 	_this.meta = {
@@ -35,7 +35,7 @@ require(['jquery'], function($){
 	_this.initialise = function(){
 		// Initialise application
 		// Return self
-		console.log($);
+		console.log('imports: ',$, _);
 		return _this;
 	};
 
@@ -63,6 +63,6 @@ require(['jquery'], function($){
 	;
 
 	// Call constructor & return self
-	return window.ProjectName = _this.initialise();
+	return _this.initialise();
 
 });

@@ -121,16 +121,14 @@
 
 		<script src="js/require.js"></script>
 		<script>
-		var ProjectName = {
-			oh:'yeah'
-		};
 		require({
 			baseUrl: 'js',
-			priority: ['jquery']
-		}, ['project_id'], function(){
-			console.log('ProjectName has loaded');
-			console.dir(ProjectName);
-		});
+			priority: ['jquery'],
+			paths: {
+				jquery: 'jquery-1.7.min',
+				underscore: 'underscore-1.2.1.min'
+			}
+		}, ['project_id']);
 		</script>
 
 	</body>
