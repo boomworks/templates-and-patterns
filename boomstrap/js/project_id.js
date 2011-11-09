@@ -12,7 +12,9 @@
 
 /*jslint eqeqeq: true */
 
-var ProjectName = (function(_this, window, document, $, undefined){
+require(['jquery', 'underscore', 'js/jquery.easing-1.3.js'], function($, _){
+
+	var _this = {};
 
 	// Metadata
 	_this.meta = {
@@ -33,6 +35,7 @@ var ProjectName = (function(_this, window, document, $, undefined){
 	_this.initialise = function(){
 		// Initialise application
 		// Return self
+		console.log('imports: ',$, _);
 		return _this;
 	};
 
@@ -62,4 +65,4 @@ var ProjectName = (function(_this, window, document, $, undefined){
 	// Call constructor & return self
 	return _this.initialise();
 
-}(ProjectName || {}, window, document, jQuery));
+});

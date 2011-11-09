@@ -119,8 +119,17 @@
 
 		</div>
 
-		<script src="js/jquery-1.6.2.min.js"></script>
-		<script src="js/project_id.js"></script>
+		<script src="js/require.js"></script>
+		<script>
+		require({
+			baseUrl: 'js',
+			priority: ['jquery'],
+			paths: {
+				jquery: 'jquery-1.7.min',
+				underscore: 'underscore-1.2.1.min'
+			}
+		}, ['project_id']);
+		</script>
 
 	</body>
 </html>
