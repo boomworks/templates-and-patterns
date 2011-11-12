@@ -672,3 +672,67 @@ nav li {
   vertical-align: top; }
 .price .per {
   vertical-align: top; }
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background: #f3f3f3;
+  background: #f3f3f3;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(100%, #cccccc));
+  background: -webkit-linear-gradient(top, #f3f3f3 0%, #cccccc 100%);
+  background: -moz-linear-gradient(top, #f3f3f3 0%, #cccccc 100%);
+  background: -ms-linear-gradient(top, #f3f3f3 0%, #cccccc 100%);
+  background: -o-linear-gradient(top, #f3f3f3 0%, #cccccc 100%);
+  background: linear-gradient(top, #f3f3f3 0%, #cccccc 100%);
+  /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
+  color: #333;
+  -webkit-transition: box-shadow 0.25s ease 0s;
+  -moz-transition: box-shadow 0.25s ease 0s;
+  -o-transition: box-shadow 0.25s ease 0s;
+  transition: box-shadow 0.25s ease 0s;
+  cursor: pointer; }
+  .button:hover {
+    box-shadow: 0 0 10px rgba(87, 87, 255, 0.25); }
+  .button:active {
+    background: #cccccc;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #f3f3f3));
+    background: -webkit-linear-gradient(top, #cccccc 0%, #f3f3f3 100%);
+    background: -moz-linear-gradient(top, #cccccc 0%, #f3f3f3 100%);
+    background: -ms-linear-gradient(top, #cccccc 0%, #f3f3f3 100%);
+    background: -o-linear-gradient(top, #cccccc 0%, #f3f3f3 100%);
+    background: linear-gradient(top, #cccccc 0%, #f3f3f3 100%);
+    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
+  .button[disabled] {
+    opacity: 0.666; }
+  .button.primary {
+    font-weight: bold;
+    color: #fff;
+    border-color: #5757ff;
+    background: #5757ff;
+    background: rgba(87, 87, 255, 0.5);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(87, 87, 255, 0.5)), color-stop(100%, #5757ff));
+    background: -webkit-linear-gradient(top, rgba(87, 87, 255, 0.5) 0%, #5757ff 100%);
+    background: -moz-linear-gradient(top, rgba(87, 87, 255, 0.5) 0%, #5757ff 100%);
+    background: -ms-linear-gradient(top, rgba(87, 87, 255, 0.5) 0%, #5757ff 100%);
+    background: -o-linear-gradient(top, rgba(87, 87, 255, 0.5) 0%, #5757ff 100%);
+    background: linear-gradient(top, rgba(87, 87, 255, 0.5) 0%, #5757ff 100%);
+    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
+  .button.primary:active {
+    background: #5757ff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5757ff), color-stop(100%, rgba(87, 87, 255, 0.5)));
+    background: -webkit-linear-gradient(top, #5757ff 0%, rgba(87, 87, 255, 0.5) 100%);
+    background: -moz-linear-gradient(top, #5757ff 0%, rgba(87, 87, 255, 0.5) 100%);
+    background: -ms-linear-gradient(top, #5757ff 0%, rgba(87, 87, 255, 0.5) 100%);
+    background: -o-linear-gradient(top, #5757ff 0%, rgba(87, 87, 255, 0.5) 100%);
+    background: linear-gradient(top, #5757ff 0%, rgba(87, 87, 255, 0.5) 100%);
+    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
+
+.ui-button-menu {
+  display: none; }

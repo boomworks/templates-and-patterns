@@ -1,0 +1,55 @@
+
+
+.button {
+
+	display: inline-block;
+
+	padding: 0.5em 1.5em;
+	margin: 0;
+
+	border: 1px solid #ccc;
+	border-radius: 7px;
+
+	background: #f3f3f3;
+	@include gradient-bg(#f3f3f3, #ccc);
+
+	&:hover {
+		box-shadow: 0 0 10px rgba(87, 87, 255, 0.25)
+	}
+
+	&:active {
+		@include gradient-bg(#ccc, #f3f3f3);
+	}
+
+	color: #333;
+
+	@include transition(box-shadow, 0.25s);
+
+	cursor: pointer;
+
+	&[disabled] {
+		opacity: 0.666;
+	}
+
+	&.primary {
+		font-weight: bold;
+		color: #fff;
+		border-color: rgb(87, 87, 255);
+		background: rgb(87, 87, 255);
+		@include gradient-bg(rgba(87, 87, 255, 0.5), rgb(87, 87, 255));
+	}
+
+	&.primary:active {
+		@include gradient-bg(rgb(87, 87, 255), rgba(87, 87, 255, 0.5));
+	}
+
+
+}
+
+
+
+
+
+.ui-button-menu {
+	display: none;
+}
