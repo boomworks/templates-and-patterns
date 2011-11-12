@@ -4,24 +4,26 @@
 
 	display: inline-block;
 
-	padding: 0.5em 1.5em;
+	padding: 0.3em 1em;
 	margin: 0;
 
 	border: 1px solid #ccc;
 	border-radius: 7px;
 
-	background: #f3f3f3;
-	@include gradient-bg(#f3f3f3, #ccc);
+	background: #e5e5e5;
+	@include gradient-bg(#e5e5e5, #ccc);
 
 	&:hover {
-		box-shadow: 0 0 10px rgba(87, 87, 255, 0.25)
+		box-shadow: 0 0 10px #ABDDEE;
 	}
 
 	&:active {
-		@include gradient-bg(#ccc, #f3f3f3);
+		@include gradient-bg(#ccc, #e5e5e5);
 	}
 
+	font-weight: bold;
 	color: #333;
+	text-shadow: -1px -1px 1px #ccc;
 
 	@include transition(box-shadow, 0.25s);
 
@@ -32,15 +34,15 @@
 	}
 
 	&.primary {
-		font-weight: bold;
+		border-color: #09c;
+		background: #7FCCE5;
+		@include gradient-bg(#7FCCE5, #09c);
 		color: #fff;
-		border-color: rgb(87, 87, 255);
-		background: rgb(87, 87, 255);
-		@include gradient-bg(rgba(87, 87, 255, 0.5), rgb(87, 87, 255));
+		text-shadow: -1px -1px 1px #09c;
 	}
 
 	&.primary:active {
-		@include gradient-bg(rgb(87, 87, 255), rgba(87, 87, 255, 0.5));
+		@include gradient-bg(#09c, #7FCCE5);
 	}
 
 
