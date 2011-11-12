@@ -1,6 +1,6 @@
 
 
-.button {
+.button, .button:link, .button:visited {
 
 	display: inline-block;
 
@@ -10,30 +10,42 @@
 	border: 1px solid #ccc;
 	border-radius: 7px;
 
-	background: #e5e5e5;
 	@include gradient-bg(#e5e5e5, #ccc);
 
+	color: #333;
+	font-size: inherit;
+	font-weight: bold;
+	line-height: inherit;
+	text-decoration: none;
+	text-shadow: -1px -1px 1px #ccc;
+
+	cursor: pointer;
+
+
 	&:hover {
-		box-shadow: 0 0 10px #ABDDEE;
+		box-shadow: 0 0 7px 2px #ABDDEE;
 	}
 
 	&:active {
 		@include gradient-bg(#ccc, #e5e5e5);
 	}
 
-	font-weight: bold;
-	color: #333;
-	text-shadow: -1px -1px 1px #ccc;
-
-	@include transition(box-shadow, 0.25s);
-
-	cursor: pointer;
 
 	&[disabled] {
 		opacity: 0.666;
 	}
 
-	&.primary {
+	&[disabled]:hover {
+		box-shadow: none;
+	}
+
+	&[disabled]:active {
+		@include gradient-bg(#e5e5e5, #ccc);
+	}
+
+
+	&.primary,
+	&.primary[disabled]:active {
 		border-color: #09c;
 		background: #7FCCE5;
 		@include gradient-bg(#7FCCE5, #09c);
@@ -44,6 +56,9 @@
 	&.primary:active {
 		@include gradient-bg(#09c, #7FCCE5);
 	}
+
+
+	@include transition(box-shadow, 0.25s);
 
 
 }

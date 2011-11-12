@@ -673,13 +673,12 @@ nav li {
 .price .per {
   vertical-align: top; }
 
-.button {
+.button, .button:link, .button:visited {
   display: inline-block;
   padding: 0.3em 1em;
   margin: 0;
   border: 1px solid #ccc;
   border-radius: 7px;
-  background: #e5e5e5;
   background: #e5e5e5;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(100%, #cccccc));
   background: -webkit-linear-gradient(top, #e5e5e5 0%, #cccccc 100%);
@@ -689,17 +688,20 @@ nav li {
   background: linear-gradient(top, #e5e5e5 0%, #cccccc 100%);
   /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
-  font-weight: bold;
   color: #333;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: inherit;
+  text-decoration: none;
   text-shadow: -1px -1px 1px #cccccc;
+  cursor: pointer;
   -webkit-transition: box-shadow 0.25s ease 0s;
   -moz-transition: box-shadow 0.25s ease 0s;
   -o-transition: box-shadow 0.25s ease 0s;
-  transition: box-shadow 0.25s ease 0s;
-  cursor: pointer; }
-  .button:hover {
-    box-shadow: 0 0 10px #ABDDEE; }
-  .button:active {
+  transition: box-shadow 0.25s ease 0s; }
+  .button:hover, .button:link:hover, .button:visited:hover {
+    box-shadow: 0 0 7px 2px #ABDDEE; }
+  .button:active, .button:link:active, .button:visited:active {
     background: #cccccc;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #e5e5e5));
     background: -webkit-linear-gradient(top, #cccccc 0%, #e5e5e5 100%);
@@ -709,9 +711,21 @@ nav li {
     background: linear-gradient(top, #cccccc 0%, #e5e5e5 100%);
     /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
-  .button[disabled] {
+  .button[disabled], .button:link[disabled], .button:visited[disabled] {
     opacity: 0.666; }
-  .button.primary {
+  .button[disabled]:hover, .button:link[disabled]:hover, .button:visited[disabled]:hover {
+    box-shadow: none; }
+  .button[disabled]:active, .button:link[disabled]:active, .button:visited[disabled]:active {
+    background: #e5e5e5;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(100%, #cccccc));
+    background: -webkit-linear-gradient(top, #e5e5e5 0%, #cccccc 100%);
+    background: -moz-linear-gradient(top, #e5e5e5 0%, #cccccc 100%);
+    background: -ms-linear-gradient(top, #e5e5e5 0%, #cccccc 100%);
+    background: -o-linear-gradient(top, #e5e5e5 0%, #cccccc 100%);
+    background: linear-gradient(top, #e5e5e5 0%, #cccccc 100%);
+    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
+  .button.primary, .button.primary[disabled]:active, .button:link.primary, .button:link.primary[disabled]:active, .button:visited.primary, .button:visited.primary[disabled]:active {
     border-color: #09c;
     background: #7FCCE5;
     background: #7fcce5;
@@ -725,7 +739,7 @@ nav li {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
     color: #fff;
     text-shadow: -1px -1px 1px #0099cc; }
-  .button.primary:active {
+  .button.primary:active, .button:link.primary:active, .button:visited.primary:active {
     background: #0099cc;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0099cc), color-stop(100%, #7fcce5));
     background: -webkit-linear-gradient(top, #0099cc 0%, #7fcce5 100%);
