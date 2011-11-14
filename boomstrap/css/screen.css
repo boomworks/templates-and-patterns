@@ -726,30 +726,6 @@ nav li {
     /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
   .button.primary, .button.primary[disabled]:active, .button:link.primary, .button:link.primary[disabled]:active, .button:visited.primary, .button:visited.primary[disabled]:active {
-    border-color: #069;
-    background: #09c;
-    background: #0099cc;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0099cc), color-stop(100%, #006699));
-    background: -webkit-linear-gradient(top, #0099cc 0%, #006699 100%);
-    background: -moz-linear-gradient(top, #0099cc 0%, #006699 100%);
-    background: -ms-linear-gradient(top, #0099cc 0%, #006699 100%);
-    background: -o-linear-gradient(top, #0099cc 0%, #006699 100%);
-    background: linear-gradient(top, #0099cc 0%, #006699 100%);
-    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
-    color: #fff;
-    text-shadow: -1px -1px 1px #006699; }
-  .button.primary:active, .button:link.primary:active, .button:visited.primary:active {
-    background: #006699;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #006699), color-stop(100%, #0099cc));
-    background: -webkit-linear-gradient(top, #006699 0%, #0099cc 100%);
-    background: -moz-linear-gradient(top, #006699 0%, #0099cc 100%);
-    background: -ms-linear-gradient(top, #006699 0%, #0099cc 100%);
-    background: -o-linear-gradient(top, #006699 0%, #0099cc 100%);
-    background: linear-gradient(top, #006699 0%, #0099cc 100%);
-    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
-  .button.secondary, .button.secondary[disabled]:active, .button:link.secondary, .button:link.secondary[disabled]:active, .button:visited.secondary, .button:visited.secondary[disabled]:active {
     border-color: #DB5626;
     background: #E79070;
     background: #e79070;
@@ -763,7 +739,7 @@ nav li {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
     color: #fff;
     text-shadow: -1px -1px 1px #db5626; }
-  .button.secondary:active, .button:link.secondary:active, .button:visited.secondary:active {
+  .button.primary:active, .button:link.primary:active, .button:visited.primary:active {
     background: #db5626;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #db5626), color-stop(100%, #e79070));
     background: -webkit-linear-gradient(top, #db5626 0%, #e79070 100%);
@@ -771,6 +747,54 @@ nav li {
     background: -ms-linear-gradient(top, #db5626 0%, #e79070 100%);
     background: -o-linear-gradient(top, #db5626 0%, #e79070 100%);
     background: linear-gradient(top, #db5626 0%, #e79070 100%);
+    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
+  .button.secondary, .button.secondary[disabled]:active, .button:link.secondary, .button:link.secondary[disabled]:active, .button:visited.secondary, .button:visited.secondary[disabled]:active {
+    border-color: #069;
+    background: #09c;
+    background: #0099cc;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0099cc), color-stop(100%, #006699));
+    background: -webkit-linear-gradient(top, #0099cc 0%, #006699 100%);
+    background: -moz-linear-gradient(top, #0099cc 0%, #006699 100%);
+    background: -ms-linear-gradient(top, #0099cc 0%, #006699 100%);
+    background: -o-linear-gradient(top, #0099cc 0%, #006699 100%);
+    background: linear-gradient(top, #0099cc 0%, #006699 100%);
+    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
+    color: #fff;
+    text-shadow: -1px -1px 1px #006699; }
+  .button.secondary:active, .button:link.secondary:active, .button:visited.secondary:active {
+    background: #006699;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #006699), color-stop(100%, #0099cc));
+    background: -webkit-linear-gradient(top, #006699 0%, #0099cc 100%);
+    background: -moz-linear-gradient(top, #006699 0%, #0099cc 100%);
+    background: -ms-linear-gradient(top, #006699 0%, #0099cc 100%);
+    background: -o-linear-gradient(top, #006699 0%, #0099cc 100%);
+    background: linear-gradient(top, #006699 0%, #0099cc 100%);
+    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
+  .button.tertiary, .button.tertiary[disabled]:active, .button:link.tertiary, .button:link.tertiary[disabled]:active, .button:visited.tertiary, .button:visited.tertiary[disabled]:active {
+    border-color: #09c;
+    background: #7FCCE5;
+    background: #7fcce5;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fcce5), color-stop(100%, #0099cc));
+    background: -webkit-linear-gradient(top, #7fcce5 0%, #0099cc 100%);
+    background: -moz-linear-gradient(top, #7fcce5 0%, #0099cc 100%);
+    background: -ms-linear-gradient(top, #7fcce5 0%, #0099cc 100%);
+    background: -o-linear-gradient(top, #7fcce5 0%, #0099cc 100%);
+    background: linear-gradient(top, #7fcce5 0%, #0099cc 100%);
+    /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
+    color: #fff;
+    text-shadow: -1px -1px 1px #0099cc; }
+  .button.tertiary:active, .button:link.tertiary:active, .button:visited.tertiary:active {
+    background: #0099cc;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0099cc), color-stop(100%, #7fcce5));
+    background: -webkit-linear-gradient(top, #0099cc 0%, #7fcce5 100%);
+    background: -moz-linear-gradient(top, #0099cc 0%, #7fcce5 100%);
+    background: -ms-linear-gradient(top, #0099cc 0%, #7fcce5 100%);
+    background: -o-linear-gradient(top, #0099cc 0%, #7fcce5 100%);
+    background: linear-gradient(top, #0099cc 0%, #7fcce5 100%);
     /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
 
