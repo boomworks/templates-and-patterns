@@ -46,16 +46,31 @@
 
 	&.primary,
 	&.primary[disabled]:active {
-		border-color: #09c;
-		background: #7FCCE5;
-		@include gradient-bg(#7FCCE5, #09c);
+		border-color: #069;
+		background: #09c;
+		@include gradient-bg(#09c, #069);
 		color: #fff;
-		text-shadow: -1px -1px 1px #09c;
+		text-shadow: -1px -1px 1px #069;
 	}
 
 	&.primary:active {
-		@include gradient-bg(#09c, #7FCCE5);
+		@include gradient-bg(#069, #09c);
 	}
+
+
+	&.secondary,
+	&.secondary[disabled]:active {
+		border-color: #DB5626;
+		background: #E79070;
+		@include gradient-bg(#E79070, #DB5626);
+		color: #fff;
+		text-shadow: -1px -1px 1px #DB5626;
+	}
+
+	&.secondary:active {
+		@include gradient-bg(#DB5626, #E79070);
+	}
+
 
 
 	@include transition(box-shadow, 0.25s);
