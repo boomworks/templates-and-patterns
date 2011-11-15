@@ -22,6 +22,11 @@
 	cursor: pointer;
 
 
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 7px 2px #ABDDEE;
+	}
+
 	&:hover {
 		box-shadow: 0 0 7px 2px #ABDDEE;
 	}
