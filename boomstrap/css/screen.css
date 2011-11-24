@@ -868,7 +868,15 @@ nav li {
 .price .per {
   vertical-align: top; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\000033}}
+/* TODO: replace with mixin */
+@font-face {
+  font-family: 'WebSymbolsRegular';
+  src: url("fonts/websymbols-regular-webfont.eot");
+  src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/websymbols-regular-webfont.woff") format("woff"), url("fonts/websymbols-regular-webfont.ttf") format("truetype"), url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000315}}
 .button, .button:link, .button:visited {
   display: inline-block;
   padding: 0.3em 1em;
@@ -894,15 +902,30 @@ nav li {
   -webkit-transition: box-shadow 0.25s ease 0s;
   -moz-transition: box-shadow 0.25s ease 0s;
   -o-transition: box-shadow 0.25s ease 0s;
-  transition: box-shadow 0.25s ease 0s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000325}}
+  transition: box-shadow 0.25s ease 0s;
+  /*
+  	&.menu {
+  		border-radius: 7px 0 0 7px;
+  		padding-right: 7px;
+  		border-right: 1px solid blue;
+  	}
+  
+  	&.menu:after {
+  		display: inline-block;
+  		position: relative;
+  		top: 0;
+  		left: 10px;
+  		font-family: 'WebSymbolsRegular';
+  	}
+  */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000337}}
   .button:focus, .button:link:focus, .button:visited:focus {
     outline: none;
     box-shadow: 0 0 7px 2px #ABDDEE; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000342}}
   .button:hover, .button:link:hover, .button:visited:hover {
     box-shadow: 0 0 7px 2px #ABDDEE; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000346}}
   .button:active, .button:link:active, .button:visited:active {
     background: #cccccc;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #e5e5e5));
@@ -913,13 +936,13 @@ nav li {
     background: linear-gradient(top, #cccccc 0%, #e5e5e5 100%);
     /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000351}}
   .button[disabled], .button:link[disabled], .button:visited[disabled] {
     opacity: 0.666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000355}}
   .button[disabled]:hover, .button:link[disabled]:hover, .button:visited[disabled]:hover {
     box-shadow: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000359}}
   .button[disabled]:active, .button:link[disabled]:active, .button:visited[disabled]:active {
     background: #e5e5e5;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(100%, #cccccc));
@@ -930,7 +953,7 @@ nav li {
     background: linear-gradient(top, #e5e5e5 0%, #cccccc 100%);
     /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000365}}
   .button.primary, .button.primary[disabled]:active, .button:link.primary, .button:link.primary[disabled]:active, .button:visited.primary, .button:visited.primary[disabled]:active {
     border-color: #DB5626;
     background: #E79070;
@@ -945,7 +968,7 @@ nav li {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
     color: #fff;
     text-shadow: -1px -1px 1px #db5626; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000373}}
   .button.primary:active, .button:link.primary:active, .button:visited.primary:active {
     background: #db5626;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #db5626), color-stop(100%, #e79070));
@@ -956,7 +979,7 @@ nav li {
     background: linear-gradient(top, #db5626 0%, #e79070 100%);
     /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000379}}
   .button.secondary, .button.secondary[disabled]:active, .button:link.secondary, .button:link.secondary[disabled]:active, .button:visited.secondary, .button:visited.secondary[disabled]:active {
     border-color: #069;
     background: #09c;
@@ -971,7 +994,7 @@ nav li {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
     color: #fff;
     text-shadow: -1px -1px 1px #006699; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000387}}
   .button.secondary:active, .button:link.secondary:active, .button:visited.secondary:active {
     background: #006699;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #006699), color-stop(100%, #0099cc));
@@ -982,7 +1005,7 @@ nav li {
     background: linear-gradient(top, #006699 0%, #0099cc 100%);
     /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000393}}
   .button.tertiary, .button.tertiary[disabled]:active, .button:link.tertiary, .button:link.tertiary[disabled]:active, .button:visited.tertiary, .button:visited.tertiary[disabled]:active {
     border-color: #09c;
     background: #7FCCE5;
@@ -997,7 +1020,7 @@ nav li {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)";
     color: #fff;
     text-shadow: -1px -1px 1px #0099cc; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003101}}
   .button.tertiary:active, .button:link.tertiary:active, .button:visited.tertiary:active {
     background: #0099cc;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0099cc), color-stop(100%, #7fcce5));
@@ -1008,7 +1031,69 @@ nav li {
     background: linear-gradient(top, #0099cc 0%, #7fcce5 100%);
     /* IE8< filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0); */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$header_start_colour', endColorstr='$header_end_colour', GradientType=0)"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003122}}
+  .button.icon, .button:link.icon, .button:visited.icon {
+    padding-right: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003126}}
+  .button.icon:before, .button.icon:after, .button:link.icon:before, .button:link.icon:after, .button:visited.icon:before, .button:visited.icon:after {
+    position: relative;
+    top: -1px;
+    font-family: 'WebSymbolsRegular';
+    font-size: 12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003133}}
+  .button.icon-arrow-right, .button:link.icon-arrow-right, .button:visited.icon-arrow-right {
+    padding-right: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003136}}
+  .button.icon-arrow-right:after, .button:link.icon-arrow-right:after, .button:visited.icon-arrow-right:after {
+    left: 7px;
+    font-size: 10px;
+    content: ">"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003142}}
+  .button.icon-arrow-left, .button:link.icon-arrow-left, .button:visited.icon-arrow-left {
+    padding-left: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003145}}
+  .button.icon-arrow-left:before, .button:link.icon-arrow-left:before, .button:visited.icon-arrow-left:before {
+    left: -7px;
+    font-size: 10px;
+    content: "<"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003151}}
+  .button.icon-question, .button:link.icon-question, .button:visited.icon-question {
+    padding-right: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003154}}
+  .button.icon-question:after, .button:link.icon-question:after, .button:visited.icon-question:after {
+    top: 0;
+    left: 7px;
+    font-family: inherit;
+    content: "?"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003161}}
+  .button.icon-search, .button:link.icon-search, .button:visited.icon-search {
+    padding-right: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003164}}
+  .button.icon-search:after, .button:link.icon-search:after, .button:visited.icon-search:after {
+    left: 7px;
+    content: "L"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003169}}
+  .button.icon-twitter, .button:link.icon-twitter, .button:visited.icon-twitter {
+    padding-right: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003172}}
+  .button.icon-twitter:after, .button:link.icon-twitter:after, .button:visited.icon-twitter:after {
+    left: 7px;
+    content: "t"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003177}}
+  .button.icon-mail, .button:link.icon-mail, .button:visited.icon-mail {
+    padding-right: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003180}}
+  .button.icon-mail:after, .button:link.icon-mail:after, .button:visited.icon-mail:after {
+    left: 7px;
+    content: "@"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003185}}
+  .button.icon-cloud, .button:link.icon-cloud, .button:visited.icon-cloud {
+    padding-right: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003188}}
+  .button.icon-cloud:after, .button:link.icon-cloud:after, .button:visited.icon-cloud:after {
+    left: 7px;
+    content: "C"; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/www\/templates-and-patterns\/boomstrap\/scss\/_buttons\.scss}line{font-family:\00003199}}
 .ui-button-menu {
   display: none; }
